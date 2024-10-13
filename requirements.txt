@@ -9,3 +9,4 @@ sentence_transformers
 ctransformers
 unstructured
 bitsandbytes
+python-dotenv
