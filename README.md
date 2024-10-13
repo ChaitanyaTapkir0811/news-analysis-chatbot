@@ -1,1 +1,3 @@
 # news-analysis-chatbot
+
+#Requirements
