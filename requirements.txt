@@ -1,0 +1,11 @@
+streamlit
+langchain-community
+faiss-cpu
+transformers
+requests
+beautifulsoup4
+groq
+sentence_transformers
+ctransformers
+unstructured
+bitsandbytes
