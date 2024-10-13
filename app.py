@@ -8,6 +8,13 @@ from groq import Groq
 import warnings
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv  # Import the dotenv library
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the API key from the environment
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 # Suppress warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -121,8 +128,7 @@ if st.button("Get Answer"):
                     context = "\n".join([doc.page_content for doc in filtered_results])
 
                     # Generate answer using Groq API
-                    groq_api_key = "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"
-                    client = Groq(api_key=groq_api_key)
+                    client = Groq(api_key=GROQ_API_KEY)
 
                     completion = client.chat.completions.create(
                         model="llama3-8b-8192",
