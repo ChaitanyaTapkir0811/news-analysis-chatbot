@@ -22,7 +22,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 # Streamlit setup
 st.set_page_config(page_title="News Research Tool", layout="wide")
-st.title("📰 News Research Tool using LLM")
+st.title("📰 News Analysis Chatbot")
 
 # Initialize session state variables
 if 'faiss_index' not in st.session_state:
